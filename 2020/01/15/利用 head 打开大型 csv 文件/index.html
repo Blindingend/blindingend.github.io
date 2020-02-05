@@ -55,18 +55,19 @@
   };
 </script>
 
-  <meta name="description" content="用来存放自己写过的一些文章">
-<meta name="keywords" content="tech, life">
-<meta property="og:type" content="website">
-<meta property="og:title" content="BlindingBlog">
-<meta property="og:url" content="http://Blindingend.github.io/sourc/categories/TechLife/index.html">
+  <meta name="description" content="在工作中经常需要处理一些大型的csv 文件，在进行简单检查的时候不得不用 tabview 打开很大的文件，每次都需要卡上半天。这种情况下我们可以使用 head 和split 来对文件进行分割，来达到快速查看文件的目的。 headhead 指令的作用是输出一个文件的前面几行（默认十行）/几个字节到标准输出，用法如下： 12345head [-n count | -c bytes] [file ...">
+<meta name="keywords" content="Shell,COding,Skill">
+<meta property="og:type" content="article">
+<meta property="og:title" content="利用 head 打开大型 csv 文件">
+<meta property="og:url" content="http://Blindingend.github.io/2020/01/15/利用 head 打开大型 csv 文件/index.html">
 <meta property="og:site_name" content="BlindingBlog">
-<meta property="og:description" content="用来存放自己写过的一些文章">
+<meta property="og:description" content="在工作中经常需要处理一些大型的csv 文件，在进行简单检查的时候不得不用 tabview 打开很大的文件，每次都需要卡上半天。这种情况下我们可以使用 head 和split 来对文件进行分割，来达到快速查看文件的目的。 headhead 指令的作用是输出一个文件的前面几行（默认十行）/几个字节到标准输出，用法如下： 12345head [-n count | -c bytes] [file ...">
 <meta property="og:locale" content="zh-cn">
+<meta property="og:updated_time" content="2020-02-05T14:28:34.616Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="BlindingBlog">
-<meta name="twitter:description" content="用来存放自己写过的一些文章">
-  <link rel="canonical" href="http://Blindingend.github.io/sourc/categories/TechLife/">
+<meta name="twitter:title" content="利用 head 打开大型 csv 文件">
+<meta name="twitter:description" content="在工作中经常需要处理一些大型的csv 文件，在进行简单检查的时候不得不用 tabview 打开很大的文件，每次都需要卡上半天。这种情况下我们可以使用 head 和split 来对文件进行分割，来达到快速查看文件的目的。 headhead 指令的作用是输出一个文件的前面几行（默认十行）/几个字节到标准输出，用法如下： 12345head [-n count | -c bytes] [file ...">
+  <link rel="canonical" href="http://Blindingend.github.io/2020/01/15/利用 head 打开大型 csv 文件/">
 
 
 <script id="page-configurations">
@@ -74,13 +75,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>Category: TechLife | BlindingBlog</title>
+  <title>利用 head 打开大型 csv 文件 | BlindingBlog</title>
   
 
 
@@ -221,81 +222,126 @@
         <div class="content-wrap">
             
 
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-  
-
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block category">
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1 class="collection-header">TechLife<small>Category</small>
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="http://Blindingend.github.io/2020/01/15/利用 head 打开大型 csv 文件/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yan Xin">
+      <meta itemprop="description" content="用来存放自己写过的一些文章">
+      <meta itemprop="image" content="https://tva1.sinaimg.cn/large/006y8mN6gy1g742tw2b5oj307s07sgli.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BlindingBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">利用 head 打开大型 csv 文件
+
+          
         </h1>
-      </div>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              
+                
+              
+
+              <time title="Created: 2020-01-15 09:45:20" itemprop="dateCreated datePublished" datetime="2020-01-15T09:45:20+08:00">2020-01-15</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-05 22:28:34" itemprop="dateModified" datetime="2020-02-05T22:28:34+08:00">2020-02-05</time>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+        <p>在工作中经常需要处理一些大型的csv 文件，在进行简单检查的时候不得不用 <code>tabview</code> 打开很大的文件，每次都需要卡上半天。这种情况下我们可以使用 <code>head</code> 和<code>split</code> 来对文件进行分割，来达到快速查看文件的目的。</p>
+<h2 id="head"><a href="#head" class="headerlink" title="head"></a>head</h2><p>head 指令的作用是输出一个文件的前面几行（默认十行）/几个字节到标准输出，用法如下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">head [-n count | -c bytes] [file ...] </span><br><span class="line"><span class="meta">#</span> examples</span><br><span class="line">head a.csv &gt;&gt; b.csv # 使用head获取 a.csv 的前 10 行，重定向到 b.csv</span><br><span class="line">head 15 a.csv &gt;&gt; b.csv # 获取前 15 行</span><br><span class="line">head 15 a.csv b.csv c.csv &gt;&gt; d.csv # 选中多个文件时输出内容会以 ``==&gt; XXX &lt;=='' 间隔， xxx 为选中文件名</span><br></pre></td></tr></table></figure>
 
-  
-  
+<p><em>相似的，<code>tail</code> 有类似的获取文件尾的作用</em></p>
 
-  
+    </div>
+
     
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
-    </div>
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
+    
+    
         
-          <a class="post-title-link" href="/2019/09/18/备份这件大事儿/" itemprop="url">
-            <span itemprop="name">备份这件大事儿</span>
-          </a>
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/source/tags/Shell-COding-Skill/" rel="tag"># Shell,COding,Skill</a>
+            
+          </div>
         
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-09-18T21:36:17+08:00"
-              content="2019-09-18">
-          09-18
-        </time>
-      </div>
+        
 
-    </header>
-  </article>
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2019/10/05/近日杂想/" rel="next" title="近日杂想">
+                  <i class="fa fa-chevron-left"></i> 近日杂想
+                </a>
+              
+            </div>
 
+            <span class="post-nav-divider"></span>
 
-
-    </div>
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2020/02/05/几种股票行情的介绍/" rel="prev" title="几种股票行情的介绍">
+                  几种股票行情的介绍 <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
+        
+      </footer>
+    
   </div>
   
   
   
+  </article>
 
-  
-
+  </div>
 
 
           </div>
@@ -314,6 +360,11 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
@@ -326,6 +377,8 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#head"><span class="nav-number">1.</span> <span class="nav-text">head</span></a></li></ol></div>
+        
       </div>
       <!--/noindex-->
 
