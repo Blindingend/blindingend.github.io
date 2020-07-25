@@ -288,7 +288,7 @@
       
         <p>在工作中经常需要处理一些大型的csv 文件，在进行简单检查的时候不得不用 <code>tabview</code> 打开很大的文件，每次都需要卡上半天。这种情况下我们可以使用 <code>head</code> 和<code>split</code> 来对文件进行分割，来达到快速查看文件的目的。</p>
 <h2 id="head"><a href="#head" class="headerlink" title="head"></a>head</h2><p>head 指令的作用是输出一个文件的前面几行（默认十行）/几个字节到标准输出，用法如下：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">head [-n count | -c bytes] [file ...] </span><br><span class="line"><span class="meta">#</span> examples</span><br><span class="line">head a.csv &gt;&gt; b.csv # 使用head获取 a.csv 的前 10 行，重定向到 b.csv</span><br><span class="line">head 15 a.csv &gt;&gt; b.csv # 获取前 15 行</span><br><span class="line">head 15 a.csv b.csv c.csv &gt;&gt; d.csv # 选中多个文件时输出内容会以 ``==&gt; XXX &lt;=='' 间隔， xxx 为选中文件名</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">head [-n count | -c bytes] [file ...] </span><br><span class="line"><span class="meta">#</span><span class="bash"> examples</span></span><br><span class="line">head a.csv &gt;&gt; b.csv # 使用head获取 a.csv 的前 10 行，重定向到 b.csv</span><br><span class="line">head 15 a.csv &gt;&gt; b.csv # 获取前 15 行</span><br><span class="line">head 15 a.csv b.csv c.csv &gt;&gt; d.csv # 选中多个文件时输出内容会以 ``==&gt; XXX &lt;=='' 间隔， xxx 为选中文件名</span><br></pre></td></tr></table></figure>
 
 <p><em>相似的，<code>tail</code> 有类似的获取文件尾的作用</em></p>
 
@@ -395,7 +395,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -421,7 +421,7 @@
             <a href="/tags/">
           
         
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">tags</span>
         </a>
       </div>
